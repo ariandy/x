@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Kelipatan Persekutuan Terkecil - Pra-Aljabar (59%)</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../chapter_0/0.html">Intro</a></li><li class="chapter-item expanded affix "><a href="../chapter_0/1.html">Progress &amp; Catatan Lainnya</a></li><li class="chapter-item expanded "><a href="../chapter_1/0.html"><strong aria-hidden="true">1.</strong> Angka &amp; Himpunan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_1/1.html"><strong aria-hidden="true">1.1.</strong> Identitas</a></li><li class="chapter-item expanded "><a href="../chapter_1/2.html"><strong aria-hidden="true">1.2.</strong> Invers Aditif</a></li><li class="chapter-item expanded "><a href="../chapter_1/3.html"><strong aria-hidden="true">1.3.</strong> Pengurangan (Kasus Spesifik) &amp; Negatif Berganda</a></li><li class="chapter-item expanded "><a href="../chapter_1/4.html"><strong aria-hidden="true">1.4.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/5.html"><strong aria-hidden="true">1.5.</strong> Perkalian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/6.html"><strong aria-hidden="true">1.6.</strong> Pembagian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/7.html"><strong aria-hidden="true">1.7.</strong> Invers Multiplikatif, Tak Terdefinisi &amp; Bentuk Lain Dari Pembagian</a></li><li class="chapter-item expanded "><a href="../chapter_1/8.html"><strong aria-hidden="true">1.8.</strong> Nilai Absolut</a></li><li class="chapter-item expanded "><a href="../chapter_1/9.html"><strong aria-hidden="true">1.9.</strong> Operasi Aritmatika (Rangkuman I, Saran &amp; Pengingat)</a></li><li class="chapter-item expanded "><a href="../chapter_1/10.html"><strong aria-hidden="true">1.10.</strong> Format Bersusun / Menurun</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_2/0.html"><strong aria-hidden="true">2.</strong> Faktor dan Kelipatan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_2/1.html"><strong aria-hidden="true">2.1.</strong> Keterbagian &amp; Sisa Bagi</a></li><li class="chapter-item expanded "><a href="../chapter_2/2.html"><strong aria-hidden="true">2.2.</strong> Kelipatan</a></li><li class="chapter-item expanded "><a href="../chapter_2/3.html"><strong aria-hidden="true">2.3.</strong> Bilangan Prima &amp; Bilangan Komposit</a></li><li class="chapter-item expanded "><a href="../chapter_2/4.html"><strong aria-hidden="true">2.4.</strong> Pohon Faktor</a></li><li class="chapter-item expanded "><a href="../chapter_2/5.html"><strong aria-hidden="true">2.5.</strong> Faktorisasi Prima &amp; Hasil Perkalian Prima</a></li><li class="chapter-item expanded "><a href="../chapter_2/6.html" class="active"><strong aria-hidden="true">2.6.</strong> Kelipatan Persekutuan Terkecil</a></li><li class="chapter-item expanded "><a href="../chapter_2/7.html"><strong aria-hidden="true">2.7.</strong> Faktor Persekutuan Terbesar</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_3/0.html"><strong aria-hidden="true">3.</strong> Pecahan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_3/1.html"><strong aria-hidden="true">3.1.</strong> Lebih Lanjut Tentang Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/2.html"><strong aria-hidden="true">3.2.</strong> Penyederhanaan Pecahan &amp; Pembatalan</a></li><li class="chapter-item expanded "><a href="../chapter_3/3.html"><strong aria-hidden="true">3.3.</strong> Pecahan Ekuivalen</a></li><li class="chapter-item expanded "><a href="../chapter_3/4.html"><strong aria-hidden="true">3.4.</strong> Pecahan/Pembagian Dengan Nol</a></li><li class="chapter-item expanded "><a href="../chapter_3/5.html"><strong aria-hidden="true">3.5.</strong> Penjumlahan &amp; Pengurangan Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/6.html"><strong aria-hidden="true">3.6.</strong> Perkalian &amp; Pembagian Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/7.html"><strong aria-hidden="true">3.7.</strong> Pecahan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_3/8.html"><strong aria-hidden="true">3.8.</strong> Resiprok</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_4/0.html"><strong aria-hidden="true">4.</strong> Bilangan Campuran</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_4/1.html"><strong aria-hidden="true">4.1.</strong> Bilangan Campuran &amp; Pecahan Tak Wajar</a></li><li class="chapter-item expanded "><a href="../chapter_4/2.html"><strong aria-hidden="true">4.2.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/3.html"><strong aria-hidden="true">4.3.</strong> Perkalian &amp; Pembagian Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/4.html"><strong aria-hidden="true">4.4.</strong> Hubungan Antar Bilangan</a></li><li class="chapter-item expanded "><a href="../chapter_4/5.html"><strong aria-hidden="true">4.5.</strong> Penjumlahan &amp; Konversi Satuan</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_5/0.html"><strong aria-hidden="true">5.</strong> Bilangan Desimal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_5/1.html"><strong aria-hidden="true">5.1.</strong> Nilai Tempat</a></li><li class="chapter-item expanded "><a href="../chapter_5/2.html"><strong aria-hidden="true">5.2.</strong> Aritmatika Desimal</a></li><li class="chapter-item expanded "><a href="../chapter_5/3.html"><strong aria-hidden="true">5.3.</strong> Lebih Lanjut Tentang Pembagian &amp; Desimal</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Pra-Aljabar (59%)</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="kelipatan-persekutuan-terkecil"><a class="header" href="#kelipatan-persekutuan-terkecil">Kelipatan Persekutuan Terkecil</a></h1>
+<p>Kelipatan Persekutuan Terkecil (KPK) dari sepasang (dua buah) bilangan asli adalah sebuah angka terkecil yang bisa dibagi habis oleh kedua angka tersebut. Membingungkan? Kita bahas perlahan-lahan.</p>
+<p>Misal, kita ingin mencari KPK dari 3 dan 6. Maka kita buat terlebih dahulu kelipatan dari 3 dan 6.</p>
+<script type="math/tex; mode=display">
+    \begin{array}{rrrrrrr}
+        Kelipatan \hspace{0.4em} 3 &\Rightarrow &3, &6, &9, &12, &15, &18, &...\\
+        Kelipatan \hspace{0.4em} 6 &\Rightarrow &6, &12, &18, &... &\quad &\quad &\quad
+    \end{array}
+</script>
+<p>Berhubung pada kelipatan 3 hanya saya tuliskan sampai 18, maka pada kelipatan 6 pun hanya saya tuliskan sampai 18 juga.</p>
+<p>Setelah itu, kita ingin cari &quot;Kelipatan Persekutuan&quot;nya. Kelipatan Persekutuan ini adalah angka-angka yang bisa terbagi habis oleh kedua angka tersebut, yang mana dalam contoh kasus ini adalah 3 dan 6. Atau lebih mudahnya, kita mengambil semua angka yang sama-sama muncul pada kedua kelipatan tersebut.</p>
+<script type="math/tex; mode=display">
+    \require{cancel}
+    \begin{array}{rrrrrr}
+        &\cancel{3}, &6, &\cancel{9}, &12, &\cancel{15}, &18, &...\\
+        &6, &12, &18, &... &\quad &\quad &\quad
+    \end{array}
+</script>
+<p>Kita menemukan beberapa angka yang sama di kedua kelipatan tersebut, yaitu 6, 12 dan 18. Inilah Kelipatan Persekutuannya.</p>
+<p>Nah, dari 6, 12 dan 18, yang mana yang paling <strong>terkecil</strong>? Tentu saja 6. Itulah KPKnya.</p>
+<hr />
+<p>Contoh lagi, kita ingin mencari KPK dari 4 dan 5.</p>
+<script type="math/tex; mode=display">
+    \require{cancel}
+    \begin{array}{rrrrrr}
+        &\cancel{4}, &\cancel{8}, &\cancel{12}, &\cancel{16}, &20\\
+        &\cancel{5}, &\cancel{10}, &\cancel{15}, &20 &\quad
+    \end{array}
+</script>
+<p>Dan kita menemukan 20 adalah KPK dari 4 dan 5.</p>
+<p>Contoh lainnya,</p>
+<ul>
+<li>KPK dari 4 dan 6 adalah 12.</li>
+<li>KPK dari 9 dan 2 adalah 18.</li>
+<li>KPK dari 6 dan 8 adalah 24.</li>
+<li>dll.</li>
+</ul>
+<p>Di saat kita mencari KPK dari angka-angka kecil, cara termudah untuk mencari KPKnya adalah dengan membuat kelipatannya dari angka yang paling besarnya terlebih dahulu. Lalu kita periksa di setiap kelipatannya apakah ia habis terbagi dengan angka pasangannya. Jika tidak, lanjutkan pencarian kelipatannya sampai kita menemukan angka yang bisa dibagi dengan angka pasangannya.</p>
+<p>Contoh, kita ingin mencari KPK dari 6 dan 8. Dari pasangan 6 dan 8, 8 adalah yang paling besar. Maka kita akan mencari kelipatan 8.</p>
+<ul>
+<li>Kelipatan 8 yang pertama adalah 8. 8 tidak bisa terbagi habis dengan 6. <strong>Lanjut</strong>.</li>
+<li>Kelipatan 8 yang kedua adalah 16. 16 tidak bisa terbagi habis dengan 6. <strong>Lanjut</strong>.</li>
+<li>Kelipatan 8 yang ketiga adalah 24. 24 bisa terbagi habis dengan 6. <strong>Berhenti</strong>. KPKnya telah ditemukan.</li>
+</ul>
+<p>Proses pencarian di atas ditulis agak panjang hanya sebagai contoh untuk memudahkan pengandaiannya saja. Singkatnya, anda juga bisa menuliskan seperti ini.</p>
+<ul>
+<li>\(8\cdot1=8\). 8 tidak bisa terbagi habis dengan 6. <strong>Lanjut</strong>.</li>
+<li>\(8\cdot2=16\). 16 tidak bisa terbagi habis dengan 6. <strong>Lanjut</strong>.</li>
+<li>\(8\cdot3=24\). 24 bisa terbagi habis dengan 6. <strong>Berhenti</strong>. KPKnya telah ditemukan.</li>
+</ul>
+<h2 id="metode-pemfaktoran"><a class="header" href="#metode-pemfaktoran">Metode Pemfaktoran</a></h2>
+<p>Waktunya kita mengeluh.</p>
+<blockquote>
+<p>&quot;Bagaimana kalau angkanya besar? Pasti melelahkan kalau kelipatannya dituliskan semua untuk cari KPKnya.&quot;</p>
+</blockquote>
+<p>Benar. Untuk itulah ada metode pemfaktoran.</p>
+<p>Caranya adalah temukan faktorisasi prima dari sepasang angka yang ingin dicari KPKnya tersebut dan gunakan faktor prima terbesarnya untuk mendapatkan KPKnya.</p>
+<blockquote>
+<p>Sekali lagi, ingat, faktor prima dan faktorisasi prima adalah dua hal yang berbeda.</p>
+</blockquote>
+<p>Contohnya, kita akan mencari KPK dari 847 dan 99.</p>
+<p>Faktorisasi Prima keduanya adalah,</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        99 &= 3\cdot3\cdot11\\
+        847 &= 7\cdot11\cdot11
+    \end{align}
+</script>
+<p>Bila ada faktor yang sama, kita kelompokkan menggunakan perpangkatan.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        99 &= 3^2\cdot11\\
+        847 &= 7\cdot11^2
+    \end{align}
+</script>
+<p>Lalu kita ambil faktor prima yang kita dapatkan dari keduanya, yaitu 3, 7 dan 11.<br />
+Dan dari faktor prima tersebut, ambil angka yang memiliki pangkat terbesar.</p>
+<ul>
+<li>Untuk 3, ada dua buah faktor 3 di 99, namun tidak ada faktor 3 di 847. Jadi kita akan mengambil \(3^2\).</li>
+<li>Untuk 7, ada satu buah faktor 7 di 847, namun tidak ada faktor 7 di 99. Jadi kita akan mengambil \(7\).</li>
+<li>Untuk 11, ada satu buah faktor 11 di 99 dan dua buah faktor 11 di 847. Sehingga kita akan mengambil yang paling besar saja, yaitu dua faktor, \(11^2\).</li>
+</ul>
+<p>Oleh karena itu, KPK dari 847 dan 99 adalah \(3^2\cdot7\cdot11^2=7623\).</p>
+<p>Cara membuktikan bahwa 7623 adalah KPK dari 847 dan 99 adalah dengan cara membagi 7623 ke sepasang angka tersebut. Jika 7623 terbagi habis (menghasilkan bilangan asli) ketika dibagikan dengan sepasang angka tersebut, maka benar bahwa ia adalah KPKnya.</p>
+<script type="math/tex; mode=display">
+    \begin{array}{rl}
+        &7623 \div 99 &= 77\\
+        &7623 \div 847 &= 9
+    \end{array}
+</script>
+<p>Masing-masing, kita mendapatkan 77 dan 9. Karena kedua hasilnya adalah bilangan asli, maka terbukti bahwa 7623 adalah KPK dari 99 dan 847.</p>
+<p>Namun pembuktian ini sebenarnya <strong>tidak wajib</strong> diperlukan. Itu hanya sekedar cara apabila anda ingin memastikan bahwa yang anda dapatkan itu benar adalah KPKnya.</p>
+<p>Anda juga bisa menuliskan secara singkat kasus di atas seperti ini.</p>
+<p>\[KPK(847,99)=7623\]</p>
+<p>Atau,</p>
+<p>\[KPK(99,847)=7623\]</p>
+<p>Tidak ada masalah bagaimanapun anda menuliskan urutan dari pasangan angkanya.</p>
+<p>KPK dalam bahasa Inggris disebut dengan <em>Least Common Multiple</em> atau disingkat dengan LCM.</p>
+<h2 id="kelipatan-persekutuan-terkecil--lebih-dari-dua-variabel"><a class="header" href="#kelipatan-persekutuan-terkecil--lebih-dari-dua-variabel">Kelipatan Persekutuan Terkecil : Lebih Dari Dua Variabel</a></h2>
+<p>Kasus di atas adalah tentang mencari KPK dari dua variabel. Terkadang kita menemukan problem di mana kita harus mencari KPK yang variabel pasangannya lebih dari dua. Dan, ya, meskipun di atas kita menggunakan pendefinisian KPK untuk dua variabel, sebenarnya kita bisa menghitung KPK dengan lebih dari dua variabel. Biasanya hal seperti ini muncul dalam soal cerita seperti di bawah ini.</p>
+<blockquote>
+<p>A pergi ke perpustakaan setiap 24 hari sekali.<br />
+B pergi ke perpustakaan setiap 18 hari sekali.<br />
+C pergi ke perpustakaan setiap 22 hari sekali.<br />
+Apabila hari ini adalah hari ke-0 dan hari ini mereka bertiga bertemu di perpustakaan, maka, di hari ke berapa mereka bertiga akan bertemu lagi di perpustakaan?</p>
+</blockquote>
+<p>Nah, soal cerita seperti di atas adalah mencari KPK dari tiga pasang variabel. Tidak perlu bingung. Meskipun anda bertemu dengan problem mencari KPK lebih dari dua variabel, tetap lakukan langkah seperti yang kita lakukan sebelumnya.</p>
+<ul>
+<li>Lakukan faktorisasi prima dari ketiga pasang variabel tersebut.</li>
+<li>Ambil faktor-faktor prima dari tiga variabel tersebut.</li>
+<li>Lalu ambil faktor-faktor dengan pangkat terbesar untuk mewakili setiap faktor-faktor prima yang kita dapatkan.</li>
+<li>Kalikan semua faktor tersebut. Selesai.</li>
+</ul>
+<p>Berikut pengerjaan soal dari KPK dengan tiga variabel tersebut.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        24 &= 2^3\cdot3\\
+        18 &= 2\cdot3^2\\
+        22 &= 2\cdot11
+    \end{align}
+</script>
+<p>Setelah mencari faktornya dan mengelompokkannya, kita mendapatkan 2, 3 dan 11.<br />
+Dari 2, 3 dan 11 ini, pangkat terbesarnya adalah \(2^3\), \(3^2\) dan 11. Lalu kita kalikan semuanya dan hasilnya adalah 792. Sehingga, KPK(24,18,22) adalah 792.</p>
+<p>Metode faktor ini cukup membantu untuk mencari KPK dari sepasang angka yang besar atau lebih dari dua pasang variabel.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter_2/5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../chapter_2/7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter_2/5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../chapter_2/7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

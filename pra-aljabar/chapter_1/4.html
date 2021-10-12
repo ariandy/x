@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Penjumlahan &amp; Pengurangan Pada Bilangan Bertanda - Pra-Aljabar (59%)</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../chapter_0/0.html">Intro</a></li><li class="chapter-item expanded affix "><a href="../chapter_0/1.html">Progress &amp; Catatan Lainnya</a></li><li class="chapter-item expanded "><a href="../chapter_1/0.html"><strong aria-hidden="true">1.</strong> Angka &amp; Himpunan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_1/1.html"><strong aria-hidden="true">1.1.</strong> Identitas</a></li><li class="chapter-item expanded "><a href="../chapter_1/2.html"><strong aria-hidden="true">1.2.</strong> Invers Aditif</a></li><li class="chapter-item expanded "><a href="../chapter_1/3.html"><strong aria-hidden="true">1.3.</strong> Pengurangan (Kasus Spesifik) &amp; Negatif Berganda</a></li><li class="chapter-item expanded "><a href="../chapter_1/4.html" class="active"><strong aria-hidden="true">1.4.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/5.html"><strong aria-hidden="true">1.5.</strong> Perkalian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/6.html"><strong aria-hidden="true">1.6.</strong> Pembagian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/7.html"><strong aria-hidden="true">1.7.</strong> Invers Multiplikatif, Tak Terdefinisi &amp; Bentuk Lain Dari Pembagian</a></li><li class="chapter-item expanded "><a href="../chapter_1/8.html"><strong aria-hidden="true">1.8.</strong> Nilai Absolut</a></li><li class="chapter-item expanded "><a href="../chapter_1/9.html"><strong aria-hidden="true">1.9.</strong> Operasi Aritmatika (Rangkuman I, Saran &amp; Pengingat)</a></li><li class="chapter-item expanded "><a href="../chapter_1/10.html"><strong aria-hidden="true">1.10.</strong> Format Bersusun / Menurun</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_2/0.html"><strong aria-hidden="true">2.</strong> Faktor dan Kelipatan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_2/1.html"><strong aria-hidden="true">2.1.</strong> Keterbagian &amp; Sisa Bagi</a></li><li class="chapter-item expanded "><a href="../chapter_2/2.html"><strong aria-hidden="true">2.2.</strong> Kelipatan</a></li><li class="chapter-item expanded "><a href="../chapter_2/3.html"><strong aria-hidden="true">2.3.</strong> Bilangan Prima &amp; Bilangan Komposit</a></li><li class="chapter-item expanded "><a href="../chapter_2/4.html"><strong aria-hidden="true">2.4.</strong> Pohon Faktor</a></li><li class="chapter-item expanded "><a href="../chapter_2/5.html"><strong aria-hidden="true">2.5.</strong> Faktorisasi Prima &amp; Hasil Perkalian Prima</a></li><li class="chapter-item expanded "><a href="../chapter_2/6.html"><strong aria-hidden="true">2.6.</strong> Kelipatan Persekutuan Terkecil</a></li><li class="chapter-item expanded "><a href="../chapter_2/7.html"><strong aria-hidden="true">2.7.</strong> Faktor Persekutuan Terbesar</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_3/0.html"><strong aria-hidden="true">3.</strong> Pecahan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_3/1.html"><strong aria-hidden="true">3.1.</strong> Lebih Lanjut Tentang Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/2.html"><strong aria-hidden="true">3.2.</strong> Penyederhanaan Pecahan &amp; Pembatalan</a></li><li class="chapter-item expanded "><a href="../chapter_3/3.html"><strong aria-hidden="true">3.3.</strong> Pecahan Ekuivalen</a></li><li class="chapter-item expanded "><a href="../chapter_3/4.html"><strong aria-hidden="true">3.4.</strong> Pecahan/Pembagian Dengan Nol</a></li><li class="chapter-item expanded "><a href="../chapter_3/5.html"><strong aria-hidden="true">3.5.</strong> Penjumlahan &amp; Pengurangan Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/6.html"><strong aria-hidden="true">3.6.</strong> Perkalian &amp; Pembagian Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/7.html"><strong aria-hidden="true">3.7.</strong> Pecahan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_3/8.html"><strong aria-hidden="true">3.8.</strong> Resiprok</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_4/0.html"><strong aria-hidden="true">4.</strong> Bilangan Campuran</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_4/1.html"><strong aria-hidden="true">4.1.</strong> Bilangan Campuran &amp; Pecahan Tak Wajar</a></li><li class="chapter-item expanded "><a href="../chapter_4/2.html"><strong aria-hidden="true">4.2.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/3.html"><strong aria-hidden="true">4.3.</strong> Perkalian &amp; Pembagian Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/4.html"><strong aria-hidden="true">4.4.</strong> Hubungan Antar Bilangan</a></li><li class="chapter-item expanded "><a href="../chapter_4/5.html"><strong aria-hidden="true">4.5.</strong> Penjumlahan &amp; Konversi Satuan</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_5/0.html"><strong aria-hidden="true">5.</strong> Bilangan Desimal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_5/1.html"><strong aria-hidden="true">5.1.</strong> Nilai Tempat</a></li><li class="chapter-item expanded "><a href="../chapter_5/2.html"><strong aria-hidden="true">5.2.</strong> Aritmatika Desimal</a></li><li class="chapter-item expanded "><a href="../chapter_5/3.html"><strong aria-hidden="true">5.3.</strong> Lebih Lanjut Tentang Pembagian &amp; Desimal</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Pra-Aljabar (59%)</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="penjumlahan--pengurangan-pada-bilangan-bertanda"><a class="header" href="#penjumlahan--pengurangan-pada-bilangan-bertanda">Penjumlahan &amp; Pengurangan Pada Bilangan Bertanda</a></h1>
+<p>Apa itu Bilangan bertanda?</p>
+<p>Izinkan saya untuk sedikit mengulang materi sebelumnya. Kita tahu bahwa angka negatif memiliki tanda &quot;-&quot; (misal -1, -2, -3, dst). Nah, sebenarnya, angka positif pun memiliki tanda &quot;+&quot;. Namun kita sering tidak menuliskan tanda &quot;+&quot; di depan angka positif, agar angka tersebut terlihat sederhana. Jadi, kita tak perlu menuliskan +1, +2, +3, +4, dst. Cukup dengan 1, 2, 3, 4, 5, dst. Sehingga, 11, 69, 100 adalah &quot;angka bertanda positif&quot;. Dan -7, -43, -99 adalah &quot;angka bertanda negatif&quot;. Kita cukup menyebutnya &quot;angka positif&quot; dan &quot;angka negatif&quot; tanpa perlu menambahkan kata &quot;bertanda&quot; di tengahnya. Jadi, singkatnya bilangan bertanda adalah bilangan positif dan negatif.</p>
+<p>Di saat kita melakukan penjumlahan dan pengurangan pada angka bertanda, kita memiliki tiga kombinasi yang memungkinkan dari dua angka bertanda yang akan kita jumlahkan/kurangkan.</p>
+<ul>
+<li>Keduanya adalah angka positif</li>
+<li>Keduanya adalah angka negatif</li>
+<li>Satu angka positif dan yang satunya lagi adalah angka negatif</li>
+</ul>
+<p>Mari kita lakukan penjumlahan terhadap tiga kombinasi tersebut.</p>
+<p><strong>Positif + Positif = Positif</strong>. Contohnya,</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        40+3&=43\\
+        10+7&=17
+    \end{align}
+</script>
+<p><strong>Negatif + Negatif = Negatif</strong>. <em>Cheat</em>nya, anggap saja keduanya adalah angka positif, lalu jumlahkan keduanya. Dan tambahkan tanda negatif pada hasilnya. Juga, pada pembahasan sebelumnya, kita bisa mengubahnya menjadi <strong>Negatif - Positif</strong>. Contohnya,</p>
+<script type="math/tex; mode=display">
+    \begin{array}{rl}
+        -40+(-3)=&-40-3=&-43\\
+        -10+(-7)=&-10-7=&-17
+    \end{array}
+</script>
+<p><strong>Positif + Negatif</strong> dan <strong>Negatif + Positif</strong>. Di saat kita menjumlahkan satu angka positif dan satu angka negatif, hasilnya akan <strong>positif jika angka positifnya lebih besar</strong>. Namun, hasilnya akan <strong>negatif jika angka negatifnya lebih besar</strong>.</p>
+<blockquote>
+<p>&quot;Besar&quot; yang dimaksud di sini artinya adalah memiliki jarak yang lebih jauh dari 0 jika digambarkan pada garis bilangan.</p>
+<p>Karena di saat kita bertanya &quot;Yang mana yang lebih besar antara 1 dan -9 ?&quot;, beberapa orang akan menjawab bahwa 1 lebih besar daripada -9, yang mana jawaban tersebut tidaklah salah. Namun, karena konteks &quot;besar&quot; yang dimaksud disini adalah &quot;yang jaraknya lebih jauh dari 0&quot;, oleh karenanya, -9 yang lebih besar.</p>
+</blockquote>
+<p><em>Cheat</em> untuk kasus ini adalah anggap saja kedua bilangan tersebut adalah positif. Lalu kurangkan angka yang besar ke angka yang kecil. Lalu tanda pada hasilnya menyesuaikan mengikuti tanda pada angka yang besar. Contohnya,</p>
+<p>\[6+(-9)\]</p>
+<p>Mengikuti <em>cheat</em> tersebut, yang terbesar adalah -9. Maka 9-6, dan hasilnya adalah 3. Karena tanda pada hasilnya mengikuti tanda dari angka yang terbesar (-9, yang mana adalah angka negatif), maka hasilnya adalah -3.</p>
+<p>Contoh lainnya adalah,</p>
+<p>\[8+(-2)\]</p>
+<p>Yang terbesar adalah 8. Maka 8-2,  dan hasilnya adalah 6. Karena angka terbesarnya adalah 8 (yang mana adalah positif). Maka hasilnya adalah 6.</p>
+<p>Jika angka positif dan angka negatifnya berlawanan, maka hasilnya adalah 0.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        43+(-43)&=0\\
+        -11+11&=0
+    \end{align}
+</script>
+<hr />
+<p>Sekarang kita lakukan operasi pengurangan pada kombinasi-kombinasi tersebut.</p>
+<p><strong>Positif - Positif</strong>. Hasilnya akan <strong>positif apabila angka ke-1 lebih besar</strong>. Namun menghasilkan <strong>negatif jika angka ke-2 lebih besar</strong>. Dan seperti yang kita tulis pada bagian sebelumnya, bahwa pengurangan itu adalah menjumlahkan dengan mengubah angka ke-2 menjadi invers aditifnya. Contohnya,</p>
+<p>\[2-6=2+(-6)=-4\]</p>
+<p>Angka ke-1 adalah 2. Dan angka ke-2 adalah -6. Karena -6 (angka ke-2) lebih jauh dari 0 daripada 2, maka hasilnya adalah negatif.</p>
+<p>\[45-2=45+(-2)=43\]</p>
+<p>Angka ke-1 adalah 45. Dan angka ke-2 adalah -2. Karena 45 (angka ke-1) lebih jauh dari 0 daripada -2, maka hasilnya adalah positif.</p>
+<p>Jika kedua angka positif tersebut adalah <em>equal</em>/sama, maka hasilnya adalah 0.</p>
+<p>\[10-10=0\]</p>
+<p><strong>Negatif - Negatif</strong>. Kebalikan dari &quot;Positif - Positif&quot;, hasilnya akan <strong>negatif apabila angka ke-1 lebih besar</strong>, namun menghasilkan <strong>positif jika angka ke-2 lebih besar</strong>.</p>
+<p>\[-6-(-8)=-6+8=2\]</p>
+<p>Angka ke-1 adalah -6. Dan angka ke-2 adalah -8. Karena angka ke-2 (-8) lebih besar daripada angka ke-1. Maka hasilnya adalah positif.</p>
+<p>\[-13-(-2)=-13+2=-11\]</p>
+<p>Angka ke-1 adalah -13. Dan angka ke-2 adalah -2. Karena angka ke-1 (-13) lebih besar daripada angka ke-2. Maka hasilnya adalah negatif.</p>
+<p>Jika kedua angka negatif itu adalah sama, maka hasilnya adalah 0.</p>
+<p>\[-11-(-11)=-11+11=0\]</p>
+<p><strong>Positif - Negatif = Positif</strong>.</p>
+<script type="math/tex; mode=display">
+    \begin{array}{rrr}
+        6-(-5)=&6+5&=11\\
+        40-(-3)=&40+3&=43\\
+    \end{array}
+</script>
+<p><strong>Negatif - Positif = Negatif</strong>.</p>
+<script type="math/tex; mode=display">
+    \begin{array}{rrr}
+        & -6-5 = & -6+(-5) & = -11 \\
+        & -40-3 = & -40+(-3) & = -43
+    \end{array}
+</script>
+<h2 id="rangkuman"><a class="header" href="#rangkuman">Rangkuman</a></h2>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>Positif + Positif</td><td>Positif</td></tr>
+<tr><td>Negatif + Negatif</td><td>Negatif</td></tr>
+<tr><td>Positif + Negatif</td><td>Positif, jika angka positifnya lebih besar</td></tr>
+<tr><td></td><td>Negatif, jika angka negatifnya lebih besar</td></tr>
+<tr><td></td><td>0, jika kedua angkanya adalah invers aditif</td></tr>
+<tr><td>Negatif + Positif</td><td>Positif, jika angka positifnya lebih besar</td></tr>
+<tr><td></td><td>Negatif, jika angka negatifnya lebih besar</td></tr>
+<tr><td></td><td>0, jika kedua angkanya adalah invers aditif</td></tr>
+<tr><td>Positif - Positif</td><td>Positif, jika angka ke-1 lebih besar</td></tr>
+<tr><td></td><td>Negatif, jika angka ke-2 lebih besar</td></tr>
+<tr><td></td><td>0, jika angkanya sama</td></tr>
+<tr><td>Negatif - Negatif</td><td>Positif, jika angka ke-2 lebih besar</td></tr>
+<tr><td></td><td>Negatif, jika angka ke-1 lebih besar</td></tr>
+<tr><td></td><td>0, jika angkanya sama</td></tr>
+<tr><td>Positif - Negatif</td><td>Positif</td></tr>
+<tr><td>Negatif - Positif</td><td>Negatif</td></tr>
+</tbody></table>
+<h2 id="sifat-komutatif"><a class="header" href="#sifat-komutatif">Sifat Komutatif</a></h2>
+<p>Di saat kita melakukan penjumlahan, tidak akan ada masalah jika kita menukar letak kedua angkanya.</p>
+<script type="math/tex; mode=display">
+    \begin{array}{rrl}
+        & 6 + 3 = & 3 + 6 & = 9 \\
+        & -2 + (-4) = & -4 + (-2) & = -6 \\
+        & -5 + 5 = & 5 + (-5) & = 0
+    \end{array}
+</script>
+<p>Sifat &quot;bisa menukar letak&quot; ini adalah sifat komutatif. Sifat komutatif ini tidak berlaku pada pengurangan. Menukar letaknya akan memberikan hasil yang berbeda.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        5 - 4 = 1 \quad & sedangkan \quad 4 - 5 = -1 \\
+        -10 - 2 = -12 \quad & sedangkan \quad 2 - (-10) = 12 \\
+        5 - (-5) = 10 \quad & sedangkan \quad -5 - 5 = 10
+    \end{align}
+</script>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter_1/3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../chapter_1/5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter_1/3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../chapter_1/5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

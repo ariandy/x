@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Faktor Persekutuan Terbesar - Pra-Aljabar (59%)</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../chapter_0/0.html">Intro</a></li><li class="chapter-item expanded affix "><a href="../chapter_0/1.html">Progress &amp; Catatan Lainnya</a></li><li class="chapter-item expanded "><a href="../chapter_1/0.html"><strong aria-hidden="true">1.</strong> Angka &amp; Himpunan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_1/1.html"><strong aria-hidden="true">1.1.</strong> Identitas</a></li><li class="chapter-item expanded "><a href="../chapter_1/2.html"><strong aria-hidden="true">1.2.</strong> Invers Aditif</a></li><li class="chapter-item expanded "><a href="../chapter_1/3.html"><strong aria-hidden="true">1.3.</strong> Pengurangan (Kasus Spesifik) &amp; Negatif Berganda</a></li><li class="chapter-item expanded "><a href="../chapter_1/4.html"><strong aria-hidden="true">1.4.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/5.html"><strong aria-hidden="true">1.5.</strong> Perkalian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/6.html"><strong aria-hidden="true">1.6.</strong> Pembagian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/7.html"><strong aria-hidden="true">1.7.</strong> Invers Multiplikatif, Tak Terdefinisi &amp; Bentuk Lain Dari Pembagian</a></li><li class="chapter-item expanded "><a href="../chapter_1/8.html"><strong aria-hidden="true">1.8.</strong> Nilai Absolut</a></li><li class="chapter-item expanded "><a href="../chapter_1/9.html"><strong aria-hidden="true">1.9.</strong> Operasi Aritmatika (Rangkuman I, Saran &amp; Pengingat)</a></li><li class="chapter-item expanded "><a href="../chapter_1/10.html"><strong aria-hidden="true">1.10.</strong> Format Bersusun / Menurun</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_2/0.html"><strong aria-hidden="true">2.</strong> Faktor dan Kelipatan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_2/1.html"><strong aria-hidden="true">2.1.</strong> Keterbagian &amp; Sisa Bagi</a></li><li class="chapter-item expanded "><a href="../chapter_2/2.html"><strong aria-hidden="true">2.2.</strong> Kelipatan</a></li><li class="chapter-item expanded "><a href="../chapter_2/3.html"><strong aria-hidden="true">2.3.</strong> Bilangan Prima &amp; Bilangan Komposit</a></li><li class="chapter-item expanded "><a href="../chapter_2/4.html"><strong aria-hidden="true">2.4.</strong> Pohon Faktor</a></li><li class="chapter-item expanded "><a href="../chapter_2/5.html"><strong aria-hidden="true">2.5.</strong> Faktorisasi Prima &amp; Hasil Perkalian Prima</a></li><li class="chapter-item expanded "><a href="../chapter_2/6.html"><strong aria-hidden="true">2.6.</strong> Kelipatan Persekutuan Terkecil</a></li><li class="chapter-item expanded "><a href="../chapter_2/7.html" class="active"><strong aria-hidden="true">2.7.</strong> Faktor Persekutuan Terbesar</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_3/0.html"><strong aria-hidden="true">3.</strong> Pecahan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_3/1.html"><strong aria-hidden="true">3.1.</strong> Lebih Lanjut Tentang Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/2.html"><strong aria-hidden="true">3.2.</strong> Penyederhanaan Pecahan &amp; Pembatalan</a></li><li class="chapter-item expanded "><a href="../chapter_3/3.html"><strong aria-hidden="true">3.3.</strong> Pecahan Ekuivalen</a></li><li class="chapter-item expanded "><a href="../chapter_3/4.html"><strong aria-hidden="true">3.4.</strong> Pecahan/Pembagian Dengan Nol</a></li><li class="chapter-item expanded "><a href="../chapter_3/5.html"><strong aria-hidden="true">3.5.</strong> Penjumlahan &amp; Pengurangan Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/6.html"><strong aria-hidden="true">3.6.</strong> Perkalian &amp; Pembagian Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/7.html"><strong aria-hidden="true">3.7.</strong> Pecahan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_3/8.html"><strong aria-hidden="true">3.8.</strong> Resiprok</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_4/0.html"><strong aria-hidden="true">4.</strong> Bilangan Campuran</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_4/1.html"><strong aria-hidden="true">4.1.</strong> Bilangan Campuran &amp; Pecahan Tak Wajar</a></li><li class="chapter-item expanded "><a href="../chapter_4/2.html"><strong aria-hidden="true">4.2.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/3.html"><strong aria-hidden="true">4.3.</strong> Perkalian &amp; Pembagian Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/4.html"><strong aria-hidden="true">4.4.</strong> Hubungan Antar Bilangan</a></li><li class="chapter-item expanded "><a href="../chapter_4/5.html"><strong aria-hidden="true">4.5.</strong> Penjumlahan &amp; Konversi Satuan</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_5/0.html"><strong aria-hidden="true">5.</strong> Bilangan Desimal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_5/1.html"><strong aria-hidden="true">5.1.</strong> Nilai Tempat</a></li><li class="chapter-item expanded "><a href="../chapter_5/2.html"><strong aria-hidden="true">5.2.</strong> Aritmatika Desimal</a></li><li class="chapter-item expanded "><a href="../chapter_5/3.html"><strong aria-hidden="true">5.3.</strong> Lebih Lanjut Tentang Pembagian &amp; Desimal</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Pra-Aljabar (59%)</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="faktor-persekutuan-terbesar"><a class="header" href="#faktor-persekutuan-terbesar">Faktor Persekutuan Terbesar</a></h1>
+<p>Perhatikan baik-baik definisi dari Kelipatan Persekutuan Terkecil.</p>
+<blockquote>
+<p><strong>Kelipatan Persekutuan Terkecil (KPK)</strong> dari sepasang (dua buah) bilangan asli adalah sebuah <strong>angka terkecil</strong> yang bisa <strong>dibagi</strong> habis oleh kedua angka tersebut.</p>
+</blockquote>
+<p>Sedangkan Faktor Persekutuan Terbesar:</p>
+<blockquote>
+<p><strong>Faktor Persekutuan Terbesar (FPB)</strong> dari sepasang (dua buah) bilangan asli adalah sebuah <strong>faktor terbesar</strong> yang bisa <strong>membagi</strong> habis kedua angka tersebut.</p>
+</blockquote>
+<p>Jadi, jika di KPK, tugas kita adalah tentang mencari angka yang bisa dibagi habis oleh sepasang angka. Sedangkan di FPB, tugasnya adalah tentang mencari faktor terbesar yang bisa membagi habis sepasang angka.</p>
+<p>Jika sebelumnya kita menuliskan KPK dengan cara seperti ini,</p>
+<p>\[KPK(x,y)\]</p>
+<p>Di FPB pun kita bisa menuliskan FPB seperti itu juga.</p>
+<p>\[FPB(x,y)\]</p>
+<p>Di FPB pun tidak ada masalah bagaimanapun anda menuliskan urutan dari pasangan angkanya.</p>
+<p>FPB di dalam Bahasa Inggris biasa disebut dengan <em>Greatest Common Factor</em> (GCF) atau juga <em>Greatest Common Divisor</em> (GCD).</p>
+<hr />
+<p>Satu-satunya cara untuk mendapatkan faktor terbesar dari dua buah bilangan asli adalah dengan membuat faktorisasi prima pada kedua angka tersebut dan kemudian melihat faktor-faktor yang mana saja yang muncul bersamaan pada kedua faktorisasi prima tersebut.</p>
+<p>Misal, kita ingin mencari FPB(55,275). Maka kita buat terlebih dahulu faktorisasi primanya.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        5\cdot11&=55\\
+        5\cdot5\cdot11&=275
+    \end{align}
+</script>
+<p>Dari sini, kita tandai/ambil semua faktor yang muncul bersamaan dari kedua angka tersebut</p>
+<script type="math/tex; mode=display">
+    \require{enclose}
+    \begin{align}
+        \enclose{box}{5} \cdot \enclose{box}{ 11 } & = 55 \\
+        \enclose{box}{5} \cdot 5 \cdot \enclose{box}{ 11 } & = 275
+    \end{align}
+</script>
+<p>Kita hanya mengambil satu faktor 5.<br />
+Meskipun faktor 5 muncul dua kali di 275. Namun ia hanya muncul satu kali saja di 55. Sehingga kita ambil satu saja.</p>
+<p>Lalu kita kalikan faktor-faktor yang telah kita dapatkan tadi.</p>
+<p>\[5\cdot11=55\]</p>
+<p>Sehingga kita mendapatkan 55 sebagai FPBnya.</p>
+<p>Mari kita periksa ulang jawaban yang kita dapatkan dengan cara memastikan apakah benar sepasang angka tersebut bisa terbagi habis dengan 55.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        55\div55&=1\\
+        275\div55&=5
+    \end{align}
+</script>
+<p>Yup, keduanya habis terbagi dengan 55, dengan nilai masing-masing adalah 1 dan 5. Sehingga 55 adalah faktor terbesar yang bisa membagi habis 55 dan 275.</p>
+<p>Pada contoh ini, FPBnya adalah 55, yang merupakan salah satu angka dari kedua variabelnya (55 dan 275). Ini hanya sekedar kebetulan saja. Karena biasanya Anda akan menemukan angka yang berbeda dari angka variabelnya.</p>
+<p>Contoh lainnya adalah seperti berikut.</p>
+<blockquote>
+<p>Berapa FPB(165,2178) ?</p>
+</blockquote>
+<p>Maka seperti inilah faktorisasi primanya.</p>
+<script type="math/tex; mode=display">
+    \require{enclose}
+    \begin{align}
+        \enclose{box}{3}\cdot5\cdot\enclose{box}{11}&=165\\
+        2\cdot\enclose{box}{3}\cdot3\cdot\enclose{box}{11}\cdot11&=2178
+    \end{align}
+</script>
+<p>Akhirnya kita dapatkan \(3\cdot11=33\).</p>
+<p>Kita lakukan pemeriksaan ulang apakah 33 bisa membagi habis 165 dan 2178.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        165\div33&=5\\
+        2178\div33&=66
+    \end{align}
+</script>
+<p>Sehingga benar bahwa hasil dari FPB(165,2178) adalah 33. Karena pemeriksaan ulang tersebut menghasilkan bilangan asli, yang masing-masing bernilai 5 dan 66.</p>
+<h2 id="triple-check-untuk-kpk-dan-fpb"><a class="header" href="#triple-check-untuk-kpk-dan-fpb"><em>Triple Check</em> Untuk KPK Dan FPB</a></h2>
+<p>Tahukah Anda bahwa FPB bisa digunakan untuk melakukan pemeriksaan lanjutan, baik untuk KPK dan FPB itu sendiri?</p>
+<p>Sewaktu kita menghitung KPK dan FPB, kita melakukan pemeriksaan ulang untuk memastikan bahwa hasilnya benar. Kita sebut saja &quot;pemeriksaan ulang&quot; ini sebagai &quot;<em>double check</em>&quot;.<br />
+Nah, sebenarnya, kita bisa melakukan <em>triple check</em> menggunakan FPB ini.</p>
+<p>Pada contoh kasus KPK, kita ambil dari contoh di sub-bab sebelumnya.<br />
+Ketika kita ingin memastikan apakah benar KPK(847,99) adalah 7623, kita membagikan 7623 ke kedua angka tersebut, dan masing-masingnya menghasilkan 9 dan 77.</p>
+<p>Nah, sekarang silahkan hitung berapa FPB dari hasil <em>double check</em> tersebut, yang mana adalah FPB(9,77). Jika hasilnya 1, maka jawaban Anda benar. Dan hasilnya adalah 1.</p>
+<p>Untuk kasus FPB, kita gunakan 2 kasus di atas.<br />
+Dari hasil <em>double check</em> FPB(55,275), kita masing-masing mendapatkan 1 dan 5.
+Sekarang mari kita hitung FPB(1,5). Jika hasilnya adalah 1, maka jawaban anda benar. Dan hasilnya adalah 1.</p>
+<p>Dari hasil <em>double check</em> FPB(165,2178), kita masing-masing mendapatkan 5 dan 66.
+Sekarang mari kita hitung FPB(5,66). Jika hasilnya adalah 1, maka jawaban anda benar. Dan hasilnya adalah 1.</p>
+<p>Jadi, FPB bisa digunakan untuk melakukan <em>triple check</em> untuk memastikan nilai KPK atau FPB itu sendiri sudah benar atau tidak, dengan cara mencari nilai FPB dari angka yang didapatkan saat melakukan &quot;<em>double check</em>&quot;. Jika nilai FPBnya adalah 1, maka jawaban anda sudah benar.</p>
+<h2 id="faktor-persekutuan-terbesar--lebih-dari-dua-variabel"><a class="header" href="#faktor-persekutuan-terbesar--lebih-dari-dua-variabel">Faktor Persekutuan Terbesar : Lebih Dari Dua Variabel</a></h2>
+<p>Anggap saja, kita mencari nilai dari empat variabel, yaitu FPB(507000,259896,92820,17160).<br />
+Kita lakukan hal yang sama, yaitu buatlah faktorisasi prima dari keempat variabel tersebut, lalu ambil faktor-faktor yang sama dari keempat faktorisasi prima yang telah dibuat.</p>
+<script type="math/tex; mode=display">
+    \require{enclose}
+    \begin{align}
+        \enclose{box}{ 2 } \cdot \enclose{box}{ 2 } \cdot 2 \cdot \enclose{box}{ 3 }\cdot 5 \cdot 5 \cdot 5 \cdot \enclose{box}{ 13 } \cdot 13 & = 507000 \\
+        \enclose{box}{ 2 } \cdot \enclose{box}{ 2 } \cdot 2 \cdot \enclose{box}{ 3 }\cdot 7 \cdot 7 \cdot \enclose{box}{ 13 } \cdot 17 & = 259896 \\
+        \enclose{box}{ 2 } \cdot \enclose{box}{ 2 } \cdot \enclose{box}{ 3 } \cdot 5 \cdot 7 \cdot \enclose{box}{ 13 } \cdot 17 & = 92820 \\
+        \enclose{box}{ 2 } \cdot \enclose{box}{ 2 } \cdot 2 \cdot \enclose{box}{ 3 } \cdot 5 \cdot 11 \cdot \enclose{box}{ 13 } & = 17160
+    \end{align}
+</script>
+<p>Dan kita mendapatkan bahwa faktor yang muncul di semua faktorisasi prima tersebut adalah 2, 2, 3 dan 13.
+Lalu kita lakukan operasi perkalian pada 2, 2, 3, 13 sehingga mendapatkan 156.<br />
+Sehingga FPB(507000,259896,92820,17160) adalah 156.</p>
+<p>Jadi, jangan bingung apabila mencari FPB yang variabelnya lebih dari dua buah. Prinsipnya akan tetap sama.</p>
+<h2 id="faktor-persekutuan-terbesar--ekspresi-monomial"><a class="header" href="#faktor-persekutuan-terbesar--ekspresi-monomial">Faktor Persekutuan Terbesar : Ekspresi Monomial</a></h2>
+<p>Di sini, kita akan sedikit-demi-sedikit menyentuh aljabar meskipun ini masih ditahap pra-aljabar. Karena saya berasumsi bahwa pembaca buku ini adalah orang-orang yang ingin me-<em>refresh</em> dasar matematikanya (bukan yang mempelajari matematika benar-benar dari nol), maka dengan asumsi tersebut saya beranggapan bahwa pembaca telah mengetahui sedikit tentang aljabar.</p>
+<p>Nah, saya ingin mencoba mencari nilai dari \(FPB(10a,10a^2,20a^3)\). Dengan begitu kita mendapatkan,</p>
+<script type="math/tex; mode=display">
+    \require{enclose}
+    \begin{align}
+        \enclose{box}{2}\cdot\enclose{box}{5}\cdot \enclose{box}{a} & = 10a \\
+        \enclose{box}{2}\cdot\enclose{box}{5}\cdot \enclose{box}{a}\cdot a & = 10a^2 \\
+        \enclose{box}{2}\cdot2\cdot\enclose{box}{5}\cdot \enclose{box}{a}\cdot a \cdot a & = 20a^3
+    \end{align}
+</script>
+<p>Dan kita mendapatkan faktor-faktornya, yaitu \( 2 \cdot 5 \cdot a \). Maka nilai dari \( FPB(10a,10a^2,20a^3) \) adalah 10a.</p>
+<p>Contoh kedua, \( FPB(25a^2b,5abc,35ab^2) \). Langsung saja kita kerjakan dengan singkat,</p>
+<script type="math/tex; mode=display">
+    \require{enclose}
+    \begin{align}
+        \enclose{box}{5}\cdot5\cdot \enclose{box}{a} \cdot a \cdot \enclose{box}{b} & = 25a^2b \\
+        \enclose{box}{5}\cdot \enclose{box}{a} \cdot \enclose{box}{b} \cdot c & = 5abc \\
+        \enclose{box}{5}\cdot7\cdot \enclose{box}{a} \cdot \enclose{box}{b} \cdot b & = 35ab^2
+    \end{align}
+</script>
+<p>Dan kita mendapatkan \( 5 \cdot a \cdot b \). Maka, nilai \(FPB(25a^2b,5abc,35ab^2)\) adalah 5ab.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter_2/6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../chapter_3/0.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter_2/6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../chapter_3/0.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

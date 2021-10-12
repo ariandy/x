@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Bilangan Campuran &amp; Pecahan Tak Wajar - Pra-Aljabar (59%)</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../chapter_0/0.html">Intro</a></li><li class="chapter-item expanded affix "><a href="../chapter_0/1.html">Progress &amp; Catatan Lainnya</a></li><li class="chapter-item expanded "><a href="../chapter_1/0.html"><strong aria-hidden="true">1.</strong> Angka &amp; Himpunan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_1/1.html"><strong aria-hidden="true">1.1.</strong> Identitas</a></li><li class="chapter-item expanded "><a href="../chapter_1/2.html"><strong aria-hidden="true">1.2.</strong> Invers Aditif</a></li><li class="chapter-item expanded "><a href="../chapter_1/3.html"><strong aria-hidden="true">1.3.</strong> Pengurangan (Kasus Spesifik) &amp; Negatif Berganda</a></li><li class="chapter-item expanded "><a href="../chapter_1/4.html"><strong aria-hidden="true">1.4.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/5.html"><strong aria-hidden="true">1.5.</strong> Perkalian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/6.html"><strong aria-hidden="true">1.6.</strong> Pembagian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/7.html"><strong aria-hidden="true">1.7.</strong> Invers Multiplikatif, Tak Terdefinisi &amp; Bentuk Lain Dari Pembagian</a></li><li class="chapter-item expanded "><a href="../chapter_1/8.html"><strong aria-hidden="true">1.8.</strong> Nilai Absolut</a></li><li class="chapter-item expanded "><a href="../chapter_1/9.html"><strong aria-hidden="true">1.9.</strong> Operasi Aritmatika (Rangkuman I, Saran &amp; Pengingat)</a></li><li class="chapter-item expanded "><a href="../chapter_1/10.html"><strong aria-hidden="true">1.10.</strong> Format Bersusun / Menurun</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_2/0.html"><strong aria-hidden="true">2.</strong> Faktor dan Kelipatan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_2/1.html"><strong aria-hidden="true">2.1.</strong> Keterbagian &amp; Sisa Bagi</a></li><li class="chapter-item expanded "><a href="../chapter_2/2.html"><strong aria-hidden="true">2.2.</strong> Kelipatan</a></li><li class="chapter-item expanded "><a href="../chapter_2/3.html"><strong aria-hidden="true">2.3.</strong> Bilangan Prima &amp; Bilangan Komposit</a></li><li class="chapter-item expanded "><a href="../chapter_2/4.html"><strong aria-hidden="true">2.4.</strong> Pohon Faktor</a></li><li class="chapter-item expanded "><a href="../chapter_2/5.html"><strong aria-hidden="true">2.5.</strong> Faktorisasi Prima &amp; Hasil Perkalian Prima</a></li><li class="chapter-item expanded "><a href="../chapter_2/6.html"><strong aria-hidden="true">2.6.</strong> Kelipatan Persekutuan Terkecil</a></li><li class="chapter-item expanded "><a href="../chapter_2/7.html"><strong aria-hidden="true">2.7.</strong> Faktor Persekutuan Terbesar</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_3/0.html"><strong aria-hidden="true">3.</strong> Pecahan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_3/1.html"><strong aria-hidden="true">3.1.</strong> Lebih Lanjut Tentang Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/2.html"><strong aria-hidden="true">3.2.</strong> Penyederhanaan Pecahan &amp; Pembatalan</a></li><li class="chapter-item expanded "><a href="../chapter_3/3.html"><strong aria-hidden="true">3.3.</strong> Pecahan Ekuivalen</a></li><li class="chapter-item expanded "><a href="../chapter_3/4.html"><strong aria-hidden="true">3.4.</strong> Pecahan/Pembagian Dengan Nol</a></li><li class="chapter-item expanded "><a href="../chapter_3/5.html"><strong aria-hidden="true">3.5.</strong> Penjumlahan &amp; Pengurangan Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/6.html"><strong aria-hidden="true">3.6.</strong> Perkalian &amp; Pembagian Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/7.html"><strong aria-hidden="true">3.7.</strong> Pecahan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_3/8.html"><strong aria-hidden="true">3.8.</strong> Resiprok</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_4/0.html"><strong aria-hidden="true">4.</strong> Bilangan Campuran</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_4/1.html" class="active"><strong aria-hidden="true">4.1.</strong> Bilangan Campuran &amp; Pecahan Tak Wajar</a></li><li class="chapter-item expanded "><a href="../chapter_4/2.html"><strong aria-hidden="true">4.2.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/3.html"><strong aria-hidden="true">4.3.</strong> Perkalian &amp; Pembagian Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/4.html"><strong aria-hidden="true">4.4.</strong> Hubungan Antar Bilangan</a></li><li class="chapter-item expanded "><a href="../chapter_4/5.html"><strong aria-hidden="true">4.5.</strong> Penjumlahan &amp; Konversi Satuan</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_5/0.html"><strong aria-hidden="true">5.</strong> Bilangan Desimal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_5/1.html"><strong aria-hidden="true">5.1.</strong> Nilai Tempat</a></li><li class="chapter-item expanded "><a href="../chapter_5/2.html"><strong aria-hidden="true">5.2.</strong> Aritmatika Desimal</a></li><li class="chapter-item expanded "><a href="../chapter_5/3.html"><strong aria-hidden="true">5.3.</strong> Lebih Lanjut Tentang Pembagian &amp; Desimal</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Pra-Aljabar (59%)</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="bilangan-campuran--pecahan-tak-wajar"><a class="header" href="#bilangan-campuran--pecahan-tak-wajar">Bilangan Campuran &amp; Pecahan Tak Wajar</a></h1>
+<p>Kita akan berfokus pada jenis lain dari pecahan. Yaitu adalah bilangan campuran dan bilangan tak wajar. Kita mulai mempelajari dari bentuk positifnya, dan diakhiri dengan bentuk negatifnya.</p>
+<hr />
+<p>Sampai dengan saat ini, hampir semua pecahan yang kita pelajari adalah &quot;pecahan biasa&quot;, yang mana pembilangnya lebih kecil daripada penyebutnya. Misal,</p>
+<p>\[\frac{2}{11},\frac{6}{7},\frac{17}{21}\]</p>
+<p>Sekarang kita akan mempelajari jenis lain dari pecahan, yaitu &quot;pecahan tak biasa&quot; atau disebut juga dengan nama &quot;pecahan tak wajar&quot;, yang mana pembilangnya lebih besar atau sama dengan penyebutnya. Berikut adalah contohnya:</p>
+<p>\[\frac{43}{43},\frac{21}{15},\frac{6}{5},\frac{23}{11}\]</p>
+<p>Nah, pecahan biasa adalah representasi bilangan yang ada di antara -1 dan 1 (namun tidak sama dengan -1 atau 1). Sedangkan pecahan tak wajar merepresentasikan angka yang lebih besar atau sama dengan 1, atau, angka yang lebih kecil atau sama dengan -1.</p>
+<p>Sebagai contoh, 11/6 itu adalah 11 dikali 1/6, atau bisa dikatakan &quot;1/6 sebanyak 11 buah&quot;. Setiap bagian yang diwarnai dengan warna hijau di bawah ini adalah 1/6 dari lingkaran, dan kita memiliki sebanyak 11 buah.</p>
+<p><br><p align="center">
+<img src="images/2.png"  width="41%" height="41%"/></p>
+</p><br>
+<p>Seperti yang anda lihat, kita bisa menyebut potongan di atas dengan &quot;1 lingkaran ditambah 5/6 dari lingkaran&quot;, karena kita memiliki satu lingkaran penuh pada sebelah kiri, dan memiliki 5/6 pada sebelah kanan.</p>
+<p>Karena &quot;1/6 sebanyak 11 buah&quot; itu sama dengan &quot;1 lingkaran ditambah 5/6 dari lingkaran&quot;, maka kita mengetahui bahwa keduanya sama.</p>
+<p>\[\frac{11}{6}=1\frac{5}{6}\]</p>
+<p>Kita mengetahui bahwa 11/6 adalah pecahan tak wajar, sedangkan</p>
+<p>\[1\frac{5}{6}\]</p>
+<p>(&quot;satu dan lima per enam&quot;) disebut sebagai bilangan campuran, karena ia mencampurkan bilangan bulat 1 dan pecahan 5/6. 1 didapatkan dari lingkaran penuh (seluruh bagian lingkaran diwarnai dengan warna hijau), dan 5/6 adalah bagian/potongan dari sebuah lingkaran.</p>
+<p>Jika kita rangkum semua yang tertulis di atas, bisa kita katakan bahwa ada tiga jenis pecahan:</p>
+<table><thead><tr><th>Jenis</th><th>Ciri</th><th>Contoh</th></tr></thead><tbody>
+<tr><td>Pecahan Biasa</td><td>Pembilang \(&lt;\) Penyebut</td><td>\(\frac{3}{4}\)</td></tr>
+<tr><td>Pecahan Tak Biasa</td><td>Pembilang \(\geq\) Penyebut</td><td>\(\frac{11}{9}\)</td></tr>
+<tr><td>Bilangan Campuran</td><td>Jumlah dari sebuah bilangan bulat dan sebuah pecahan</td><td>\(6\frac{11}{43}\)</td></tr>
+</tbody></table>
+<p>Hal penting lainnya yang harus kita ingat adalah <strong>bilangan campuran</strong> mengindikasikan adanya <strong>penjumlahan</strong> pada bilangan bulat dan pecahan. <strong>Bukan perkalian</strong>. Sehingga,</p>
+<p>\[3\frac{5}{6}\neq2\times\frac{5}{6}\]</p>
+<p>Dan yang benar adalah,</p>
+<p>\[3\frac{5}{6}=2+\frac{5}{6}\]</p>
+<p>Itu sebabnya ada dua cara untuk menyebut \(2\frac{5}{6}\) ini, yaitu:</p>
+<ul>
+<li>&quot;Dua dan lima per enam&quot;</li>
+<li>&quot;Dua <strong>plus</strong> lima per enam&quot; / &quot;Dua <strong>ditambah</strong> lima per enam&quot;</li>
+</ul>
+<p>Disebut <strong>Plus</strong> atau <strong>ditambah</strong> itu dikarenakan bilangan campuran adalah hasil dari penjumlahan.</p>
+<h2 id="konversi-bilangan-campuran-ke-pecahan-tak-wajar"><a class="header" href="#konversi-bilangan-campuran-ke-pecahan-tak-wajar">Konversi bilangan campuran ke pecahan tak wajar</a></h2>
+<p>Jika kita ingin mengkonversi bilangan campuran positif ke sebuah pecahan tak wajar, maka seperti inilah langkah-langkahnya:</p>
+<ul>
+<li>Lakukan perkalian pada penyebut di pecahan dengan bilangan bulatnya,</li>
+<li>Dari hasil perkalian tersebut, tambahkan dengan pembilang,</li>
+<li>Hasil dari penjumlahan inilah yang nantinya menggantikan nilai pembilang sebelumnya.</li>
+</ul>
+<p>Contoh, misalnya kita akan mengubah bilangan campuran di bawah ini menjadi pecahan tak wajar.</p>
+<p>\[6\frac{3}{5}\]</p>
+<p>Kita mengetahui bahwa:</p>
+<ul>
+<li>6 adalah bilangan bulat</li>
+<li>3/5 adalah pecahan
+<ul>
+<li>3 adalah pembilang</li>
+<li>5 adalah penyebut</li>
+</ul>
+</li>
+</ul>
+<p>Langkah pertama, kita kalikan terlebih dahulu penyebut (5) dengan bilangan bulatnya (6).</p>
+<p>\[6\times5=30\]</p>
+<p>Kemudian, hasil dari perkalian tersebut (30) ditambahkan dengan pembilangnya (3).</p>
+<p>\[30+3=33\]</p>
+<p>Hasil penjumlahan tersebutlah yang akan menjadi pembilang pada pecahan tak wajar, dan penyebutnya sama sekali tidak perlu diubah. Sehingga kita mendapatkan,</p>
+<p>\[\frac{33}{5}\]</p>
+<p>Atau, apabila kita ingin menuliskan langkah-langkahnya secara matematis, kita bisa menuliskannya seperti ini.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        6\frac{3}{5}&=6+\frac{3}{5}\\\\
+        &=\frac{6\times5}{5}+\frac{3}{5}\\\\
+        &=\frac{6\times5+3}{5}\\\\
+        &=\frac{30+3}{5}\\\\
+        &=\frac{33}{5}
+    \end{align}
+</script>
+<h2 id="konversi-pecahan-tak-wajar-ke-bilangan-campuran"><a class="header" href="#konversi-pecahan-tak-wajar-ke-bilangan-campuran">Konversi pecahan tak wajar ke bilangan campuran</a></h2>
+<p>Jika kita ingin mengkonversi pecahan tak wajar ke bilangan campuran, berikut adalah langkah-langkahnya:</p>
+<ul>
+<li>Lakukan operasi pembagian pada pembilang dan penyebutnya.</li>
+<li>Dari hasil pembagian tersebut, ambil bilangan bulatnya. Ini adalah bilangan yang akan menjadi bilangan bulat pada bilangan campurannya.</li>
+<li>Sedangkan sisa bagi dari pembagian antara pembilang dan penyebut, dijadikan pembilang pada bilangan campurannya.</li>
+</ul>
+<p>Jika sisa bagi dari pembagiannya adalah 0, itu artinya kita bisa menuliskan hasilnya sebagai bilangan bulat, alih-alih menuliskannya sebagai bilangan campuran.</p>
+<p>Contoh, misalnya kita akan mengkonversi pecahan tak wajar di bawah ini menjadi bilangan campuran.</p>
+<p>\[\frac{27}{7}\]</p>
+<p>Jika kita melihat pada kelipatan positif dari 7,</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        7\cdot1&=7\\\\
+        7\cdot2&=14\\\\
+        7\cdot3&=21\\\\
+        7\cdot4&=28
+    \end{align}
+</script>
+<p>kita bisa melihat bahwa kelipatan 7 yang menuju 27 adalah 21 (kelipatan 7 yang ke-3). Meskipun 28 dekat dengan 27, tapi kita tidak bisa menggunakannya. Karena 28 sudah melewati 27, sedangkan 21 berada di bawah 27.</p>
+<p>Ini berarti bahwa 3 merupakan bilangan bulat yang akan menjadi bilangan campuran. Dan karena 21/7 terbagi habis, maka sisa bagi 27/7 adalah 6. Nah, sisa bagi inilah (6) yang akan menjadi pembilang pada bilangan campuran tersebut. Dan penyebut dari bilangan campuran tersebut adalah penyebut yang ada pada pecahan tak wajar (7). Dari sini, kita mendapatkan bahwa bilangan campuran yang ekuivalen dengan pecahan tak wajar tersebut adalah,</p>
+<p>\[3\frac{6}{7}\]</p>
+<p>Atau, jika kita ingin menuliskan langkah-langkahnya secara matematis, kita bisa menuliskannya seperti ini.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        \frac{27}{7}&=\frac{21+6}{7}\\\\
+        &=\frac{(7\cdot3)+6}{7}\\\\
+        &=\frac{7\cdot3}{7}+\frac{6}{7}\\\\
+        &=3+\frac{6}{7}\\\\
+        &=3\frac{6}{7}
+    \end{align}
+</script>
+<h2 id="pecahan-negatif"><a class="header" href="#pecahan-negatif">Pecahan Negatif</a></h2>
+<p>Sebagaimana ada pecahan biasa positif, pecahan tak wajar positif dan bilangan campuran positif, maka ada juga pecahan biasa negatif, pecahan tak wajar negatif dan bilangan campuran negatif. Namun, berhubung kita sebelumnya sudah mempelajari tentang pecahan biasa negatif, maka kita sekarang hanya akan membahas tentang pecahan tak wajar negatif dan bilangan campuran negatif.</p>
+<hr />
+<p>Anda harus berhati-hati di saat anda menuliskan ekspresi bilangan campuran negatif. Kita mengetahui bahwa bilangan campuran adalah jumlah dari bilangan bulat dan pecahan. Di saat bilangan campuran ini positif, maka bilangan bulat dan pecahannya haruslah positif. Begitu juga dengan bilangan campuran negatif, maka bilangan bulat dan pecahannya haruslah pula negatif.</p>
+<p>Beberapa dari kita dulunya sering &quot;terpeleset&quot; dan mengira bahwa \(-3\frac{2}{11}\) itu sama seperti \(-3+\frac{2}{11}\). Namun itu sebenarnya salah. Dan tentu saja, akan sangat membantu apabila kita menggunakan tanda kurung untuk memahaminya. Maka yang benar adalah,</p>
+<p>\[-3\frac{2}{11}=-\bigg(3+\frac{2}{11}\bigg)=-3-\frac{2}{11}\]</p>
+<p>Selain menggunakan kurung lengkung, anda pun diperbolehkan menggunakan kurung siku.</p>
+<p>\[-3\frac{2}{11}=-\bigg[3+\frac{2}{11}\bigg]=-3-\frac{2}{11}\]</p>
+<p>Dan jika kita kembali ke contoh konversi yang ada di atas, maka kita akan mendapatkan seperti ini.</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        -6\frac{3}{5}&=-\bigg(6+\frac{3}{5}\bigg)\\\\
+        &=-\bigg(\frac{6\times5}{5}+\frac{3}{5}\bigg)\\\\
+        &=-\bigg(\frac{6\times5+3}{5}\bigg)\\\\
+        &=-\bigg(\frac{30+3}{5}\bigg)\\\\
+        &=-\frac{33}{5}
+    \end{align}
+</script>
+<p>Dan juga,</p>
+<script type="math/tex; mode=display">
+    \begin{align}
+        -\frac{27}{7}&=-\bigg(\frac{21+6}{7}\bigg)\\\\
+        &=-\bigg(\frac{(7\cdot3)+6}{7}\bigg)\\\\
+        &=-\bigg(\frac{7\cdot3}{7}+\frac{6}{7}\bigg)\\\\
+        &=-\bigg(3+\frac{6}{7}\bigg)\\\\
+        &=-3\frac{6}{7}
+    \end{align}
+</script>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter_4/0.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../chapter_4/2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter_4/0.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../chapter_4/2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

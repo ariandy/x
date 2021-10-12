@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Nilai Tempat - Pra-Aljabar (59%)</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../chapter_0/0.html">Intro</a></li><li class="chapter-item expanded affix "><a href="../chapter_0/1.html">Progress &amp; Catatan Lainnya</a></li><li class="chapter-item expanded "><a href="../chapter_1/0.html"><strong aria-hidden="true">1.</strong> Angka &amp; Himpunan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_1/1.html"><strong aria-hidden="true">1.1.</strong> Identitas</a></li><li class="chapter-item expanded "><a href="../chapter_1/2.html"><strong aria-hidden="true">1.2.</strong> Invers Aditif</a></li><li class="chapter-item expanded "><a href="../chapter_1/3.html"><strong aria-hidden="true">1.3.</strong> Pengurangan (Kasus Spesifik) &amp; Negatif Berganda</a></li><li class="chapter-item expanded "><a href="../chapter_1/4.html"><strong aria-hidden="true">1.4.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/5.html"><strong aria-hidden="true">1.5.</strong> Perkalian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/6.html"><strong aria-hidden="true">1.6.</strong> Pembagian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/7.html"><strong aria-hidden="true">1.7.</strong> Invers Multiplikatif, Tak Terdefinisi &amp; Bentuk Lain Dari Pembagian</a></li><li class="chapter-item expanded "><a href="../chapter_1/8.html"><strong aria-hidden="true">1.8.</strong> Nilai Absolut</a></li><li class="chapter-item expanded "><a href="../chapter_1/9.html"><strong aria-hidden="true">1.9.</strong> Operasi Aritmatika (Rangkuman I, Saran &amp; Pengingat)</a></li><li class="chapter-item expanded "><a href="../chapter_1/10.html"><strong aria-hidden="true">1.10.</strong> Format Bersusun / Menurun</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_2/0.html"><strong aria-hidden="true">2.</strong> Faktor dan Kelipatan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_2/1.html"><strong aria-hidden="true">2.1.</strong> Keterbagian &amp; Sisa Bagi</a></li><li class="chapter-item expanded "><a href="../chapter_2/2.html"><strong aria-hidden="true">2.2.</strong> Kelipatan</a></li><li class="chapter-item expanded "><a href="../chapter_2/3.html"><strong aria-hidden="true">2.3.</strong> Bilangan Prima &amp; Bilangan Komposit</a></li><li class="chapter-item expanded "><a href="../chapter_2/4.html"><strong aria-hidden="true">2.4.</strong> Pohon Faktor</a></li><li class="chapter-item expanded "><a href="../chapter_2/5.html"><strong aria-hidden="true">2.5.</strong> Faktorisasi Prima &amp; Hasil Perkalian Prima</a></li><li class="chapter-item expanded "><a href="../chapter_2/6.html"><strong aria-hidden="true">2.6.</strong> Kelipatan Persekutuan Terkecil</a></li><li class="chapter-item expanded "><a href="../chapter_2/7.html"><strong aria-hidden="true">2.7.</strong> Faktor Persekutuan Terbesar</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_3/0.html"><strong aria-hidden="true">3.</strong> Pecahan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_3/1.html"><strong aria-hidden="true">3.1.</strong> Lebih Lanjut Tentang Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/2.html"><strong aria-hidden="true">3.2.</strong> Penyederhanaan Pecahan &amp; Pembatalan</a></li><li class="chapter-item expanded "><a href="../chapter_3/3.html"><strong aria-hidden="true">3.3.</strong> Pecahan Ekuivalen</a></li><li class="chapter-item expanded "><a href="../chapter_3/4.html"><strong aria-hidden="true">3.4.</strong> Pecahan/Pembagian Dengan Nol</a></li><li class="chapter-item expanded "><a href="../chapter_3/5.html"><strong aria-hidden="true">3.5.</strong> Penjumlahan &amp; Pengurangan Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/6.html"><strong aria-hidden="true">3.6.</strong> Perkalian &amp; Pembagian Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/7.html"><strong aria-hidden="true">3.7.</strong> Pecahan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_3/8.html"><strong aria-hidden="true">3.8.</strong> Resiprok</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_4/0.html"><strong aria-hidden="true">4.</strong> Bilangan Campuran</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_4/1.html"><strong aria-hidden="true">4.1.</strong> Bilangan Campuran &amp; Pecahan Tak Wajar</a></li><li class="chapter-item expanded "><a href="../chapter_4/2.html"><strong aria-hidden="true">4.2.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/3.html"><strong aria-hidden="true">4.3.</strong> Perkalian &amp; Pembagian Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/4.html"><strong aria-hidden="true">4.4.</strong> Hubungan Antar Bilangan</a></li><li class="chapter-item expanded "><a href="../chapter_4/5.html"><strong aria-hidden="true">4.5.</strong> Penjumlahan &amp; Konversi Satuan</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_5/0.html"><strong aria-hidden="true">5.</strong> Bilangan Desimal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_5/1.html" class="active"><strong aria-hidden="true">5.1.</strong> Nilai Tempat</a></li><li class="chapter-item expanded "><a href="../chapter_5/2.html"><strong aria-hidden="true">5.2.</strong> Aritmatika Desimal</a></li><li class="chapter-item expanded "><a href="../chapter_5/3.html"><strong aria-hidden="true">5.3.</strong> Lebih Lanjut Tentang Pembagian &amp; Desimal</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Pra-Aljabar (59%)</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="nilai-tempat"><a class="header" href="#nilai-tempat">Nilai Tempat</a></h1>
+<p>Jika kita berbicara tentang Nilai Tempat, maka kita berbicara tentang sebuah nilai dari sebuah lokasi pada digit tertentu yang ada di dalam suatu angka (nilai dari tempat dimana digit itu berada di dalam suatu angka). Anggap saja ada angka 5.741, nilai tempat akan memudahkan kita untuk mengatakan dimana posisi 7 berada atau dimana posisi 1 berada pada angka tersebut.</p>
+<h2 id="format-penulisan"><a class="header" href="#format-penulisan">Format Penulisan</a></h2>
+<p>Ini adalah hal yang paling krusial. Pertama-tama, harus kita sepakati terlebih dahulu bahwa di buku ini, saya akan menuliskan desimal dengan tanda titik sebagai pemisahnya (disebut sebagai &quot;<em>Decimal point</em> di bahasa Inggris&quot;). Di Indonesia, bilangan desimal dikatakan sebagai &quot;Bilangan berkoma&quot; karena di Indonesia menggunakan tanda koma sebagai pemisahnya. Misal, jika kalian melihat 1.25 pada <em>textbook</em> berbahasa Inggris, sebenarnya itu adalah sama dengan 1,25 dalam format desimal di Indonesia. Dan kedua cara penulisan ini dibenarkan.</p>
+<table><thead><tr><th>Dengan titik</th><th>Dengan koma</th></tr></thead><tbody>
+<tr><td>1.25</td><td>1,25</td></tr>
+</tbody></table>
+<p>Kedua. Karena disini saya menggunakan format dimana titik sebagai pemisah desimal, maka koma akan dijadikan sebagai pemisah ribuan, dan ini <strong>digunakan secara opsional</strong>. Ini berkebalikan dari negara <em>non-English speaking</em> pada umumnya. Justru negara <em>non-English speaking</em> (seperti Indonesia contohnya) biasanya menggunakan koma sebagai pemisah desimalnya dan titik sebagai pemisah ribuannya.</p>
+<table><thead><tr><th>Format Pada Negara <em>English speaking</em></th><th>Format Pada Negara <em>non-English speaking</em></th></tr></thead><tbody>
+<tr><td>10,000,000.05</td><td>10.000.000,05</td></tr>
+</tbody></table>
+<p>Karena pemisah ribuan ini penggunaannya bersifat opsional, maka anda boleh saja untuk tidak menggunakannya. Pemisah ribuan ini digunakan sekedar untuk mempermudah pembacaan saja apabila digitnya sangat banyak. Namun seperti yang saya katakan tadi, tidak digunakan pun, tidak apa-apa.</p>
+<p>Ada juga format lainnya yang biasa digunakan sebagai pemisah ribuan, yaitu spasi.</p>
+<p>\[ 10 \hspace{0.3em} 000 \hspace{0.3em} 000.05 = 10000000.05 \]</p>
+<p>Sehingga, jika Anda menemukan format di bawah ini, mereka semua memiliki nilai yang sama.</p>
+<p>\[ 10 \hspace{0.3em} 000 \hspace{0.3em} 000.05 = 10.000.000,05 = 10,000,000.05 = 10000000.05\]</p>
+<p>Hal lain yang diperhatikan adalah apapun formatnya, sehabis pemisah desimal dituliskan, tidak ada lagi pemisah-pemisah lainnya. Sehingga,</p>
+<p>\[ 10,000,000.00012345 = 10000000.00012345\]</p>
+<p>Untuk lebih lanjut, anda bisa membacanya <a href="https://en.wikipedia.org/wiki/Decimal_separator#Usage_worldwide">di sini</a>.</p>
+<h2 id="lanjut-lagi"><a class="header" href="#lanjut-lagi">Lanjut lagi...</a></h2>
+<p>Menyambung pada bagian sebelumnya dimana ada angka 5.741, jika kita mengetahui nilai tempatnya, maka kita bisa mengatakan bahwa nilai tempat dari 7 adalah persepuluhan, 4 adalah perseratusan dan 1 adalah perseribuan. Persepuluhan, perseratusan dan perseribuan ini menunjukkan lokasi dari angka-angka tersebut.</p>
+<p>Di bawah ini adalah tabel mengenai nilai tempat dengan 1,020,300.000055 sebagai contohnya. Anda bisa saja memperbesar tabelnya sebanyak yang anda inginkan. Bagian tengah dari tabel ini adalah satuan/unit, yang mana biasanya dituliskan dalam bentuk digit tunggal.</p>
+<p>Dari tabel ini, kita mengetahui bahwa apabila anda dari tengah &quot;bergerak&quot; ke kiri (ke atas apabila mengacu pada tabel), anda &quot;bergerak&quot; ke puluhan. Sedangkan saat anda &quot;bergerak&quot; ke kanan (ke bawah apabila mengacu pada tabel), anda &quot;bergerak&quot; ke persepuluhan. Makin anda bergerak ke kiri, anda akan bertemu dengan ratusan, ribuan dan seterusnya. Sedangkan apabila anda bergerak ke kanan, anda akan bertemu dengan perseratusan, perseribuan dan seterusnya.</p>
+<p>Satuan/unit dan persepuluhan dipisahkan oleh titik (sesuai dengan yang saya tuliskan sebelumnya). Titik inilah yang disebut sebagai &quot;Decimal Point&quot;.</p>
+<table><thead><tr><th>Bilangan</th><th>Nilai Tempat</th></tr></thead><tbody>
+<tr><td>1</td><td>Jutaan</td></tr>
+<tr><td>,</td><td></td></tr>
+<tr><td>0</td><td>Ratus-ribuan</td></tr>
+<tr><td>2</td><td>Puluh-ribuan</td></tr>
+<tr><td>0</td><td>Ribuan</td></tr>
+<tr><td>,</td><td></td></tr>
+<tr><td>3</td><td>Ratusan</td></tr>
+<tr><td>0</td><td>Puluhan</td></tr>
+<tr><td>0</td><td>Satuan/Unit</td></tr>
+<tr><td>.</td><td></td></tr>
+<tr><td>0</td><td>Persepuluhan</td></tr>
+<tr><td>0</td><td>Perseratusan</td></tr>
+<tr><td>0</td><td>Perseribuan</td></tr>
+<tr><td>0</td><td>Persepuluh-ribuan</td></tr>
+<tr><td>5</td><td>Perseratus-ribuan</td></tr>
+<tr><td>5</td><td>Persejuta</td></tr>
+</tbody></table>
+<hr />
+<h3 id="contoh"><a class="header" href="#contoh">Contoh</a></h3>
+<p>Dimana lokasi angka 6 pada bilangan 45.91264 ?</p>
+<table><thead><tr><th>Bilangan</th><th>Nilai Tempat</th></tr></thead><tbody>
+<tr><td>4</td><td>Puluhan</td></tr>
+<tr><td>5</td><td>Satuan/Unit</td></tr>
+<tr><td>.</td><td></td></tr>
+<tr><td>9</td><td>Persepuluhan</td></tr>
+<tr><td>1</td><td>Perseratusan</td></tr>
+<tr><td>2</td><td>Perseribuan</td></tr>
+<tr><td>6</td><td>Persepuluh-ribuan</td></tr>
+<tr><td>4</td><td>Perseratus-ribuan</td></tr>
+</tbody></table>
+<p>Lokasi 6 berada pada Persepuluhan-ribuan.</p>
+<h2 id="nilai-angka"><a class="header" href="#nilai-angka">Nilai Angka</a></h2>
+<p>Nama pada nilai tempat itu sebenarnya memberitahukan kita tentang &quot;nilai&quot; yang ada pada digit-digit tersebut. Misal, anggap saja ada bilangan 3,125.678. 5 berada pada posisi satuan/unit. Ini memberitahukan kita bahwa nilai dari digit tersebut adalah \( 5 \times 1 \), yang mana adalah 5. Begitu juga dengan 2, letaknya berada di puluhan. Ini berarti nilai pada digit tersebut adalah \( 2 \times 10 \), yang nilainya adalah 20. Nah, nilai sesungguhnya dari digit-digit tersebut biasa kita kenal sebagai &quot;Nilai Angka&quot;.</p>
+<p>Masih pada angka 3,125.678, 6 berada di persepuluhan, yang berarti \( 6 \times 1/10\), atau 6/10.<br />
+Begitu juga dengan 7. Ia berada di perseratusan, yang berarti \( 7 \times 1/100\), atau 7/100.<br />
+Lebih lengkapnya, bisa di lihat pada tabel berikut.</p>
+<table><thead><tr><th>Digit</th><th>Nilai Angka</th><th>Nilai Angka (yang disederhanakan)</th><th>Penamaan</th></tr></thead><tbody>
+<tr><td>3</td><td>\( 3 \times 1,000 \)</td><td>3,000</td><td>Tiga ribu</td></tr>
+<tr><td>1</td><td>\( 1 \times 100 \)</td><td>100</td><td>Seratus</td></tr>
+<tr><td>2</td><td>\( 2 \times 10 \)</td><td>20</td><td>Dua puluh</td></tr>
+<tr><td>5</td><td>\( 5 \times 1 \)</td><td>5</td><td>Lima</td></tr>
+<tr><td>6</td><td>\( 6 \times 0.1 = 6 \times \frac{1}{10} \)</td><td>\( 0.6 = \frac{6}{10} \)</td><td>Enam persepuluh</td></tr>
+<tr><td>7</td><td>\( 7 \times 0.01 = 7 \times \frac{1}{100} \)</td><td>\( 0.07 = \frac{7}{100} \)</td><td>Tujuh perseratus</td></tr>
+<tr><td>8</td><td>\( 8 \times 0.001 = 8 \times \frac{1}{1,000} \)</td><td>\( 0.008 = \frac{8}{1,000} \)</td><td>Delapan perseribu</td></tr>
+</tbody></table>
+<h2 id="tempat-desimal"><a class="header" href="#tempat-desimal">Tempat Desimal</a></h2>
+<p>Hal lainnya yang harus diperhatikan adalah tentang istilah &quot;Tempat Desimal&quot;. Tempat Desimal adalah tempat yang berada di sebelah kanan <em>decimal point</em>. Di saat kita mengatakan bahwa sebuah bilangan memiliki &quot;sekian banyak&quot; tempat desimal, maka &quot;sekian banyak&quot; itu artinya adalah seberapa banyak digit yang berada di sebelah kanan <em>decimal point</em>.</p>
+<p>Sebagai contoh, 12.876 memiliki 5 digit (1, 2, 8, 7 dan 6). Namun ia hanya memiliki tiga tempat desimal (persepuluhan, perseratusan, perseribuan), karena ia hanya memiliki tiga digit di sebelah kanan <em>decimal point</em>. Dan digit pertama, kedua dan ketiga (secara berurutan) tersebut adalah 8, 7 dan 6.</p>
+<h2 id="pembacaanpengucapan"><a class="header" href="#pembacaanpengucapan">Pembacaan/Pengucapan</a></h2>
+<p>Ini hal krusial lainnya.</p>
+<p>Di saat kalian bertemu dengan angka ini, 43.50, bagaimana anda membacanya?</p>
+<p>Seringkali saya menemukan bahwa ada yang menyebutnya dengan &quot;Empat puluh tiga koma lima puluh&quot; dan ada juga yang mengatakan bahwa itu adalah &quot;Empat puluh tiga koma lima nol&quot;. Sebenarnya, pengucapan yang pertama adalah salah. Yang benar adalah pengucapan yang kedua, yaitu &quot;Empat puluh tiga koma lima nol&quot;. Akan saya jelaskan alasannya.</p>
+<p>Kita sama-sama mengetahui apabila semua angka di bawah ini adalah ekuivalen.</p>
+<p>\[ 43.5 = 43.50 = 43.500 = 43.5000 = 43.50000 \]</p>
+<p>Namun adalah hal yang aneh apabila kita membacanya seperti berikut.</p>
+<p>43.50 = Empat puluh tiga koma lima puluh<br />
+43.500 = Empat puluh tiga koma lima ratus<br />
+43.5000 = Empat puluh tiga koma lima ribu<br />
+43.50000 = Empat puluh tiga koma lima puluh ribu</p>
+<p>Pengucapan seperti ini justru membuat kita berasumsi bahwa semuanya memiliki nilai yang berbeda. Padahal semuanya adalah ekuivalen. Oleh karena itu, untuk setiap angka di sebelah kanan <em>decimal point</em>, kita cukup membaca angkanya saja.</p>
+<p>Contoh, ada angka 12,355.8489. Cara membacanya adalah &quot;Dua belas ribu tiga ratus lima puluh lima <strong>koma delapan empat delapan sembilan</strong>&quot;.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter_5/0.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../chapter_5/2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter_5/0.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../chapter_5/2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

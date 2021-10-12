@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Hubungan Antar Bilangan - Pra-Aljabar (59%)</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../chapter_0/0.html">Intro</a></li><li class="chapter-item expanded affix "><a href="../chapter_0/1.html">Progress &amp; Catatan Lainnya</a></li><li class="chapter-item expanded "><a href="../chapter_1/0.html"><strong aria-hidden="true">1.</strong> Angka &amp; Himpunan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_1/1.html"><strong aria-hidden="true">1.1.</strong> Identitas</a></li><li class="chapter-item expanded "><a href="../chapter_1/2.html"><strong aria-hidden="true">1.2.</strong> Invers Aditif</a></li><li class="chapter-item expanded "><a href="../chapter_1/3.html"><strong aria-hidden="true">1.3.</strong> Pengurangan (Kasus Spesifik) &amp; Negatif Berganda</a></li><li class="chapter-item expanded "><a href="../chapter_1/4.html"><strong aria-hidden="true">1.4.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/5.html"><strong aria-hidden="true">1.5.</strong> Perkalian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/6.html"><strong aria-hidden="true">1.6.</strong> Pembagian Pada Bilangan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_1/7.html"><strong aria-hidden="true">1.7.</strong> Invers Multiplikatif, Tak Terdefinisi &amp; Bentuk Lain Dari Pembagian</a></li><li class="chapter-item expanded "><a href="../chapter_1/8.html"><strong aria-hidden="true">1.8.</strong> Nilai Absolut</a></li><li class="chapter-item expanded "><a href="../chapter_1/9.html"><strong aria-hidden="true">1.9.</strong> Operasi Aritmatika (Rangkuman I, Saran &amp; Pengingat)</a></li><li class="chapter-item expanded "><a href="../chapter_1/10.html"><strong aria-hidden="true">1.10.</strong> Format Bersusun / Menurun</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_2/0.html"><strong aria-hidden="true">2.</strong> Faktor dan Kelipatan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_2/1.html"><strong aria-hidden="true">2.1.</strong> Keterbagian &amp; Sisa Bagi</a></li><li class="chapter-item expanded "><a href="../chapter_2/2.html"><strong aria-hidden="true">2.2.</strong> Kelipatan</a></li><li class="chapter-item expanded "><a href="../chapter_2/3.html"><strong aria-hidden="true">2.3.</strong> Bilangan Prima &amp; Bilangan Komposit</a></li><li class="chapter-item expanded "><a href="../chapter_2/4.html"><strong aria-hidden="true">2.4.</strong> Pohon Faktor</a></li><li class="chapter-item expanded "><a href="../chapter_2/5.html"><strong aria-hidden="true">2.5.</strong> Faktorisasi Prima &amp; Hasil Perkalian Prima</a></li><li class="chapter-item expanded "><a href="../chapter_2/6.html"><strong aria-hidden="true">2.6.</strong> Kelipatan Persekutuan Terkecil</a></li><li class="chapter-item expanded "><a href="../chapter_2/7.html"><strong aria-hidden="true">2.7.</strong> Faktor Persekutuan Terbesar</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_3/0.html"><strong aria-hidden="true">3.</strong> Pecahan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_3/1.html"><strong aria-hidden="true">3.1.</strong> Lebih Lanjut Tentang Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/2.html"><strong aria-hidden="true">3.2.</strong> Penyederhanaan Pecahan &amp; Pembatalan</a></li><li class="chapter-item expanded "><a href="../chapter_3/3.html"><strong aria-hidden="true">3.3.</strong> Pecahan Ekuivalen</a></li><li class="chapter-item expanded "><a href="../chapter_3/4.html"><strong aria-hidden="true">3.4.</strong> Pecahan/Pembagian Dengan Nol</a></li><li class="chapter-item expanded "><a href="../chapter_3/5.html"><strong aria-hidden="true">3.5.</strong> Penjumlahan &amp; Pengurangan Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/6.html"><strong aria-hidden="true">3.6.</strong> Perkalian &amp; Pembagian Pada Pecahan</a></li><li class="chapter-item expanded "><a href="../chapter_3/7.html"><strong aria-hidden="true">3.7.</strong> Pecahan Bertanda</a></li><li class="chapter-item expanded "><a href="../chapter_3/8.html"><strong aria-hidden="true">3.8.</strong> Resiprok</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_4/0.html"><strong aria-hidden="true">4.</strong> Bilangan Campuran</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_4/1.html"><strong aria-hidden="true">4.1.</strong> Bilangan Campuran &amp; Pecahan Tak Wajar</a></li><li class="chapter-item expanded "><a href="../chapter_4/2.html"><strong aria-hidden="true">4.2.</strong> Penjumlahan &amp; Pengurangan Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/3.html"><strong aria-hidden="true">4.3.</strong> Perkalian &amp; Pembagian Pada Bilangan Campuran</a></li><li class="chapter-item expanded "><a href="../chapter_4/4.html" class="active"><strong aria-hidden="true">4.4.</strong> Hubungan Antar Bilangan</a></li><li class="chapter-item expanded "><a href="../chapter_4/5.html"><strong aria-hidden="true">4.5.</strong> Penjumlahan &amp; Konversi Satuan</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_5/0.html"><strong aria-hidden="true">5.</strong> Bilangan Desimal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_5/1.html"><strong aria-hidden="true">5.1.</strong> Nilai Tempat</a></li><li class="chapter-item expanded "><a href="../chapter_5/2.html"><strong aria-hidden="true">5.2.</strong> Aritmatika Desimal</a></li><li class="chapter-item expanded "><a href="../chapter_5/3.html"><strong aria-hidden="true">5.3.</strong> Lebih Lanjut Tentang Pembagian &amp; Desimal</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Pra-Aljabar (59%)</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="hubungan-antar-bilangan"><a class="header" href="#hubungan-antar-bilangan">Hubungan Antar Bilangan</a></h1>
+<p>Pembahasan pada bagian ini agak sedikit rumit. Jadi, kita akan membahasnya secara perlahan, langkah demi langkah. Tidak perlu bingung, karena ini teramat praktikal (sering kita temui di kehidupan sehari-hari) dan kita telah mempelajari konsep-konsep dasarnya di bagian-bagian sebelumnya. Saatnya kita membahas tentang hubungan antar bilangan. Kita mulai dari membandingkan pecahan.</p>
+<h2 id="membandingkan-pecahan"><a class="header" href="#membandingkan-pecahan">Membandingkan Pecahan</a></h2>
+<p>Membandingkan pecahan berarti kita menentukan mana pecahan yang besar dan pecahan mana yang kecil. Ini adalah hal yang mudah apabila penyebutnya sama. Jika penyebutnya sama, kita hanya perlu membandingkan pembilangnya saja. Misal, kita ingin membandingkan antara 5/11 dan 8/11. Penyebut dari kedua pecahan tersebut adalah sama. Yang perlu kita lakukan adalah membandingkan pembilangnya. Karena 8 lebih besar daripada 5, maka yang terbesar di antara kedua pecahan tersebut adalah 8/11.</p>
+<p>Sedangkan apabila penyebutnya berbeda, kita tidak bisa langsung membandingkannya. Pertama-tama, kita samakan terlebih dahulu penyebutnya. Misal kita ingin membandingkan 3/5 dan 6/11. Maka kita samakan terlebih dahulu kedua penyebutnya menjadi 55, karena KPK dari 5 dan 11 adalah 55. Sehingga,</p>
+<p>\[ \frac{ 3 }{ 5 } = \frac{ 3 }{ 5 } \bigg( \frac{ 11 }{ 11 } \bigg) = \frac{ 33 }{ 55 } \]
+\[ \frac{ 6 }{ 11 } = \frac{ 6 }{ 11 } \bigg( \frac{ 5 }{ 5 } \bigg) = \frac{ 30 }{ 55 } \]</p>
+<p>33/55 ekuivalen dengan 3/5. Dan 30/55 ekuivalen dengan 6/11. Karena keduanya sudah memiliki penyebut yang sama, maka kita bisa membandingkan pembilangnya. Karena 35/55 lebih besar daripada 33/55, dengan kata lain, 3/5 lebih besar daripada 6/11. Atau boleh juga dikatakan bahwa 6/11 lebih kecil daripada 3/5.</p>
+<h2 id="hubungan-antar-bilangan--bilangan-bulat"><a class="header" href="#hubungan-antar-bilangan--bilangan-bulat">Hubungan Antar Bilangan : Bilangan Bulat</a></h2>
+<p>Sekarang, mari kita bahas tentang hubungan antara dua bilangan bulat, khususnya, bagaimana kita dapat menemukan bilangan yang merupakan pecahan dari suatu jarak (yang ada di sepanjang garis bilangan) dari bilangan bulat yang lebih kecil ke bilangan yang lebih besar. Anggap saja kita sedang memikirkan bilangan bulat 11 dan 16. Kita tahu bahwa 11 ada pada lima unit di sebelah kiri dari 16, atau bisa dikatakan juga bahwa 16 ada pada lima unit di sebelah kanan dari 11. Atau dengan kata lain pula, keduanya terpisah sejauh lima unit (16 - 11 = 5).</p>
+<p><br><p align="center">
+<img src="images/3.png"  width="70%" height="70%"/></p>
+</p><br>
+<p>Sekarang, anggap saja anda melakukan perjalanan pada garis bilangan. Anda berada di titik A, yang mana A ini adalah 11, dan anda harus menuju ke titik B, yang mana B ini adalah 16. Dari titik A ke titik B, anda sudah melakukan perjalanan sejauh 2/5 dari jarak A ke B. Pertanyaannya adalah, di mana anda berada sekarang?</p>
+<p><br><p align="center">
+<img src="images/4.png"  width="70%" height="70%"/></p>
+</p><br>
+<p>Pada ilustrasi garis bilangan di atas, kita bisa melihat (secara visual) posisi kita pada titik biru. Namun kita tidak mengetahui (dalam bentuk bilangan) dimana titik biru tersebut berada.</p>
+<p>Untuk mencari tahu hal tersebut, kita perlu mencari selisih antara titik A dan titik B, dengan cara mengurangkan nilai yang besar ke nilai yang kecil.</p>
+<p>\[ 16 - 11 = 5 \]</p>
+<p>Dan kita mengetahui jarak antara titik A dan titik B adalah 5 unit. Karena kita sekarang sudah melakukan 2/5 perjalanannya. Maka yang perlu kita lakukan adalah <strong>mengalikan*</strong> 5 dan 2/5 tersebut, sehingga,</p>
+<p>\[ 5 \times \frac{2}{5} = 2 \]</p>
+<p>Dari sini kita tahu bahwa kita telah melakukan perjalanan sejauh 2 unit dari titik A. Maka, untuk mengetahui dimana posisi kita sekarang, kita perlu menjumlahkan nilai pada titik A (11) dengan 2. Yang mana hasilnya adalah 11 + 2 = 13.</p>
+<p><br><p align="center">
+<img src="images/5.png"  width="70%" height="70%"/></p>
+</p><br>
+<p>Dan kita mendapati bahwa 2/5 dari titik A ke titik B adalah 13.</p>
+<blockquote>
+<p>Untuk memastikan bahwa anda memahami tentang &quot;Mengapa harus dikalikan&quot;, maka kita akan menggunakan analogi seperti berikut.<br />
+Semisal, saya menjalankan bisnis bersama anda dengan perjanjian bahwa saya akan mendapatkan 2/5 dari keuntungan bersih harian, berapa pun keuntungan yang didapatkan pada hari itu. Hari ini, anda mendapatkan keuntungan sebesar IDR 100000. Karena saya mendapatkan 2/5nya, maka anda membagi IDR 100000 tersebut menjadi 5 bagian sama besar, yang mana itu adalah IDR 20000 (hal ini juga sama seperti yang kita lakukan di atas, yaitu membagi garis bilangannya menjadi 5 bagian sama besar). Bagian yang terbagi sama besar tadi adalah 1/5nya. Berhubung saya mendapatkan bagian 2/5, maka saya mengambil 2 bagian dari 1/5 tadi, yang artinya saya mendapatkan \( 2 \times 20000 = 40000 \). Atau bisa dituliskan sebagai berikut.
+\[ 100000 \times 2 / 5 = 40000 \]
+Ingat lagi pada materi sebelumnya, ekspresi di atas bisa kita ubah menjadi,
+\[ 100000 \times \frac{2}{5} = 40000 \]
+Itu sebabnya tadi saya mengatakan bahwa langkah selanjutnya adalah <strong>mengalikan</strong> saja selisih antara dua titik tersebut (5) dengan pecahan yang merepresentasikan seberapa jauh kita bergerak pada jarak antara titik A dan titik B (yang mana adalah 2/5).</p>
+</blockquote>
+<hr />
+<p>Setelah melakukannya pada bilangan bulat, kita akan melakukan hal yang sama pada pecahan.</p>
+<h2 id="hubungan-antar-bilangan--pecahan"><a class="header" href="#hubungan-antar-bilangan--pecahan">Hubungan Antar Bilangan : Pecahan</a></h2>
+<p>Langsung saja ke contoh soal.<br />
+Kita berada di titik A (2/11) dan kita harus menuju ke titik B (3/4). Dan kita sudah bergerak sejauh 3/10 jarak dari A ke B. Berada dimana kita sekarang?</p>
+<p>Jika kita gambarkan ilustrasi mengenai titik A dan titik B, maka akan didapatkan ilustrasi seperti berikut.</p>
+<p><br><p align="center">
+<img src="images/6.png"  width="70%" height="70%"/></p>
+</p><br>
+<p>Atau, kalau kita ingin menyederhanakan ilustrasinya, kita bisa gambarkan menjadi,</p>
+<p><br><p align="center">
+<img src="images/7.png"  width="70%" height="70%"/></p>
+</p><br>
+<p>Kita tidak bisa langsung mengetahui jaraknya, kecuali apabila penyebutnya telah bernilai sama. Oleh karena itu, kita samakan terlebih dahulu penyebutnya.</p>
+<p>\[ \frac{ 2 }{ 11 } = \frac{ 2 }{ 11 } \bigg( \frac{ 4 }{ 4 } \bigg) = \frac{ 8 }{ 44 } \]
+\[ \frac{ 3 }{ 4 } = \frac{ 3 }{ 4 } \bigg( \frac{ 11 }{ 11 } \bigg) = \frac{ 33 }{ 44 } \]</p>
+<p>Sehingga, kita juga bisa menggambarkan ilustrasinya menjadi,</p>
+<p><br><p align="center">
+<img src="images/8.png"  width="70%" height="70%"/></p>
+</p><br>
+<p>Sekarang, kita akan mencari selisih antara 8/44 dan 33/44.</p>
+<p>\[ \frac{33}{44} - \frac{8}{44} = \frac{25}{44} \]</p>
+<p>Kita sudah melakukan 3/10 perjalanan dari jarak titik A ke titik B. Atau bisa dikatakan bahwa kita sudah bergerak sebanyak 3/10 dari jarak sepanjang 25/44. Maka kita telah berjalan sejauh,</p>
+<p>\[ \frac{25}{44} \times \frac{3}{10} = \frac{75}{440} = \frac{15}{88} \]</p>
+<p>Setelah itu, kita jumlahkan nilai pada titik A (2/11) ke 15/88.</p>
+<p>\[ \frac{2}{11} \bigg( \frac{8}{8} \bigg) + \frac{15}{88} = \frac{16}{88} + \frac{15}{88} = \frac{31}{88} \]</p>
+<p>Dan kita menemukan bahwa kita berada pada 31/88. Atau dengan kata lain, 31/88 adalah 3/10 bagian dari 2/11 ke 3/4.</p>
+<p><br><p align="center">
+<img src="images/9.png"  width="70%" height="70%"/></p>
+</p><br>
+<blockquote>
+<p>Catatan: Untuk memecahkan problem seperti ini, anda tidak perlu menggambarkan garis bilangan, karena penjelasannya akan sangat bertele-tele. Saya menggunakan ilustrasi seperti di atas hanya sekedar mempermudah pemahaman konsep.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter_4/3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../chapter_4/5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter_4/3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../chapter_4/5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
